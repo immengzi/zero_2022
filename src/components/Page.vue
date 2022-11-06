@@ -4,30 +4,30 @@
             <tr>
                 <td rowspan="2">
                     <Transition :name="this_page+'-td1'">
-                        <div v-show="visiable" class="img_div" @mouseenter="labelShow[0]=true" @mouseleave="labelShow[0]=false">
+                        <div v-if="visiable" class="img_div" @mouseenter="labelShow[0]=true" @mouseleave="labelShow[0]=false">
                             <img :src="img_src[0]"> 
                             <Transition :name="this_page+'-td1'">
-                                <div v-show="labelShow[0]" class="detail_label" v-html="text[0]"></div>
+                                <div v-if="labelShow[0]" class="detail_label" v-html="text[0]"></div>
                             </Transition>
                         </div>
                     </Transition>
                 </td>
                 <td >
                     <Transition :name="this_page+'-td2'">
-                        <div v-show="visiable" class="img_div" @mouseenter="labelShow[1]=true" @mouseleave="labelShow[1]=false">
+                        <div v-if="visiable" class="img_div" @mouseenter="labelShow[1]=true" @mouseleave="labelShow[1]=false">
                             <img :src="img_src[1]">
                             <Transition :name="this_page+'-td2'">
-                                <div v-show="labelShow[1]" class="detail_label" v-html="text[1]"></div>
+                                <div v-if="labelShow[1]" class="detail_label" v-html="text[1]"></div>
                             </Transition>
                         </div>
                     </Transition>
                 </td>
                 <td>
                     <Transition :name="this_page+'-td3'">
-                        <div v-show="visiable" class="img_div" @mouseenter="labelShow[2]=true" @mouseleave="labelShow[2]=false">
+                        <div v-if="visiable" class="img_div" @mouseenter="labelShow[2]=true" @mouseleave="labelShow[2]=false">
                             <img :src="img_src[2]"> 
                             <Transition :name="this_page+'-td3'">
-                                <div v-show="labelShow[2]" class="detail_label" v-html="text[2]"></div>
+                                <div v-if="labelShow[2]" class="detail_label" v-html="text[2]"></div>
                             </Transition>
                         </div>
                     </Transition>
@@ -36,20 +36,20 @@
             <tr>
                 <td>
                     <Transition :name="this_page+'-td4'">
-                        <div v-show="visiable" class="img_div" @mouseenter="labelShow[3]=true" @mouseleave="labelShow[3]=false">
+                        <div v-if="visiable" class="img_div" @mouseenter="labelShow[3]=true" @mouseleave="labelShow[3]=false">
                             <img :src="img_src[3]"> 
                             <Transition :name="this_page+'-td4'">
-                                <div v-show="labelShow[3]" class="detail_label" v-html="text[3]"></div>
+                                <div v-if="labelShow[3]" class="detail_label" v-html="text[3]"></div>
                             </Transition>
                         </div>
                     </Transition>
                 </td>
                 <td>
                     <Transition :name="this_page+'-td5'">
-                        <div v-show="visiable" class="img_div" @mouseenter="labelShow[4]=true" @mouseleave="labelShow[4]=false">
+                        <div v-if="visiable" class="img_div" @mouseenter="labelShow[4]=true" @mouseleave="labelShow[4]=false">
                             <img :src="img_src[4]"> 
                             <Transition :name="this_page+'-td5'">
-                                <div v-show="labelShow[4]" class="detail_label" v-html="text[4]"></div>
+                                <div v-if="labelShow[4]" class="detail_label" v-html="text[4]"></div>
                             </Transition>
                         </div>
                     </Transition>

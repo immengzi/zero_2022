@@ -1,11 +1,11 @@
 .page2-td1-enter-from,
 .page2-td2-enter-from,
 .page2-td3-enter-from{
-    transform: translateY(40%);
+    transform: translateY(30%);
 }
 .page2-td4-enter-from,
 .page2-td5-enter-from{
-    transform: translateY(80%);
+    transform: translateY(60%);
     opacity: 0;
 }
 

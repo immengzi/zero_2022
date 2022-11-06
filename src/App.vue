@@ -3,16 +3,19 @@ import TopBar from '@/components/TopBar.vue'
 import Page from '@/components/Page.vue'
 import TopicPage from '@/components/TopicPage.vue';
 import AboutPage from './components/AboutPage.vue';
+import Loading from './components/loading.vue';
 
 export default {
   components:{
     TopBar,
     Page,
     TopicPage,
-    AboutPage
+    AboutPage,
+    Loading
 },
   data() {
     return {
+      is_init: true,
       colors:['#DAF5E7','#EBE8F1','#FDE7D0'],
       index: 0,
       scrollTime: 0,
@@ -36,20 +39,43 @@ export default {
           '满载秋意的珞珈<br>一场WHUer的年度相约<br>那夜梅园操场歌声悠扬<br>少年意气风发<br>每一首歌，都饱含着真挚的情感<br>每一位歌者，都满怀热情<br>那夜的梅园因你们而闪闪发光'],
       ],
       im_src:[
-        [new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/ying.avif', import.meta.url).href,new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/detail.avif', import.meta.url).href,
-        new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/pinkFlower.avif', import.meta.url).href,new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/garden.avif', import.meta.url).href,
-        new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/peng.avif', import.meta.url).href],
-        [new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/laozhaishe.avif', import.meta.url).href,new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/xingzhenglou.avif', import.meta.url).href,
-        new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/songqing.avif', import.meta.url).href,new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/18.avif', import.meta.url).href,
-        new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/ding.avif', import.meta.url).href],
-        [new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/study.avif', import.meta.url).href,new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/sing.avif', import.meta.url).href,
-        new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/meicao.avif', import.meta.url).href,new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/sport.avif', import.meta.url).href,
-        new URL('https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/jinqiu.avif', import.meta.url).href],
+        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/ying.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/detail.avif',
+        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/pinkFlower.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/garden.avif',
+        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/peng.avif'],
+        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/laozhaishe.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/xingzhenglou.avif',
+        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/songqing.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/18.avif',
+        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/ding.avif'],
+        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/study.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/sing.avif',
+        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/meicao.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/sport.avif',
+        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/jinqiu.avif'],
+        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/flower.avif',"https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/museum.avif",
+        "https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/circle.avif","https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/gongZhu.avif",
+        "https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/ren.avif"]
       ]
     }
   },
   methods: {
-
+    getImg(){
+      let count = 0
+      for (let i = 0;i < 4;i++){
+        for (let j = 0;j < 5;j++){
+          const img = new Image()
+          img.src = this.im_src[i][j]
+          img.onload = () => {
+            count++;
+            if(count==20){
+              this.is_init = false
+            }
+          };
+          img.onerror = () => {
+            count++;
+            if(count==20){
+              this.is_init = false
+            }
+          };
+        }
+      }
+    },
     changeIndex(index){
       if(index >= 0 && index <= 4){
         if(this.index > index){
@@ -58,7 +84,6 @@ export default {
           this.UpOrDown = 'pageDown'
         }
         this.index = index;
-        this.$message({ type: 'success', text: index })
       }else if(index > 4){
         this.$message({ type: 'warn', text: '已经到底了哦~' })
       }else if(index < 0){
@@ -80,29 +105,35 @@ export default {
       }
     },
     handleScroll(e){
-      if (new Date().getTime() - this.scrollTime < 250){
-        return
-      } // 距离上次滚动不足0.25s，则认为该次滚动仍是上次滚动
-      this.scrollTime = new Date().getTime();
-      if(e.deltaY>0){
-        this.changeIndex(this.index + 1)
-      }
-      if(e.deltaY<0){
-        this.changeIndex(this.index - 1)
+      if(!this.is_init){
+        if (new Date().getTime() - this.scrollTime < 250){
+          return
+        } // 距离上次滚动不足0.25s，则认为该次滚动仍是上次滚动
+        this.scrollTime = new Date().getTime();
+        if(e.deltaY>0){
+          this.changeIndex(this.index + 1)
+        }
+        if(e.deltaY<0){
+          this.changeIndex(this.index - 1)
+        }
       }
     },
   },
   mounted(){
-     window.addEventListener('mousewheel',this.handleScroll);
+    this.getImg();
+    window.addEventListener('mousewheel',this.handleScroll);
  },
 }
 </script>
 
 <template>
+  <Transition name="easeInOut"><Loading v-if="is_init"/></Transition>
   <!-- TopBar脱离了文档流 -->
   <TopBar @changeIndex="changeIndex($event)" :page_index = 'index'/>
   <div id="pages" @mousedown="mousedown" @mouseup="mouseup">
-    <Transition :name="UpOrDown"><TopicPage class="page" v-if="index==0"/></Transition>
+    <Transition :name="UpOrDown">
+      <TopicPage class="page" v-if="index==0"/>
+    </Transition>
     <Transition :name="UpOrDown">
       <Page class="page" :background_color='colors[0]' v-if="index==1" this_page='page1' :text="texts[0]" :img_src="im_src[0]"/>
     </Transition>
@@ -147,6 +178,19 @@ export default {
   }
   .pageUp-leave-to{
     transform: translateY(100%);
+  }
+
+  .easeInOut-enter-from{
+    opacity: 0;
+  }
+  .easeInOut-enter-active{
+    transition: all 1s;
+  }
+  .easeInOut-leave-active{
+    transition: all 1s;
+  }
+  .easeInOut-leave-to{
+    opacity: 0;
   }
 </style>
 

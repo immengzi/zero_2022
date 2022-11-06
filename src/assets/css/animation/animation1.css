@@ -1,21 +1,21 @@
 .page1-td1-enter-from{
-    transform: translateX(-50%);
+    transform: translateX(-30%);
     opacity: 0;
 }
 .page1-td2-enter-from{
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     opacity: 0;
 }
 .page1-td3-enter-from{
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     opacity: 0;
 }
 .page1-td4-enter-from{
-    transform: translateY(50%);
+    transform: translateY(30%);
     opacity: 0;
 }
 .page1-td5-enter-from{
-    transform: translateY(50%);
+    transform: translateY(30%);
     opacity: 0;
 }
 

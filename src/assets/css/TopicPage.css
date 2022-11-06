@@ -1,0 +1,142 @@
+#arrow{
+  position: absolute;
+  font-size: 2.5vh;
+  bottom: 0;
+  animation: move 1.2s infinite;
+}
+#wheel{
+  position: absolute;
+  width: 2vw;
+  bottom: 7vh;
+}
+.topic_page {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  font-family: 微软雅黑, sans-serif;
+  font-weight: 400;
+  color: black;
+  background-color: #F6F7F9;
+}
+
+.banner{
+  position: relative;
+  width: 43vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.banner>img{
+  position: absolute;
+  width: 43vw;
+  height: 66vh;
+  border-radius: 0.5vh;
+  object-fit:cover;
+}
+
+.shortImg{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 43vw;
+  top: 66.1vh;
+}
+.shortImg>img{
+  width: 8.6vw;
+  margin-right: 0.05vw;
+  border-radius: 0.2vh;
+}
+.shortImg>img:hover{
+  opacity: 0.6;
+}
+.shortImg>img:hover{
+  cursor: pointer;
+}
+.home_text{
+  position: relative;
+  width: 35vw;
+  height: 50vh;
+  left: 5vw;
+}
+.home_text_title{
+  position: relative;
+  color: #242933;
+  right: 1vw;
+  width: 25vw;
+  height: 10vh;
+  font-family: huiwen, sans-serif;
+  font-size: 8vh;
+  font-weight: 550;
+}
+.home_text_title>span{
+  position: absolute;
+  right: 0;
+}
+
+.home_text_article{
+  position: relative;
+  color: #676B73;
+  top : 10vh;
+  left: 2vw;
+  width: 20vw;
+  height: 10vh;
+  font-family: huiwen, sans-serif;
+  font-size: 2vh;
+  /*text-indent:2em;*/
+  text-align: left;
+  line-height: 4vh;
+  letter-spacing: 0.3vh;
+}
+.home_text_article>span{
+  position: absolute;
+}
+
+
+.Image-enter-active{
+  animation: bounce-in 1.5s;
+}
+
+.Image-leave-active{
+  animation: bounce-in 1.5s reverse;
+}
+
+.slowImage-enter-active{
+  animation: bounce-in 3s;
+}
+
+@keyframes move{
+  0% {
+    transform: translateY(-5vh);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bigLabel-enter-from{
+  transform: translateX(100%);
+}
+.bigLabel-enter-active{
+  transition: all 0.5s ease;
+}
+
+.smallLabel-enter-from{
+  transform: translateX(100%);
+  opacity: 0;
+}
+.smallLabel-enter-active{
+  transition: all 2s ease;
+}

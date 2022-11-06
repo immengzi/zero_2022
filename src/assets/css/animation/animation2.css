@@ -1,0 +1,30 @@
+.page2-td1-enter-from,
+.page2-td2-enter-from,
+.page2-td3-enter-from{
+    transform: translateY(40%);
+}
+.page2-td4-enter-from,
+.page2-td5-enter-from{
+    transform: translateY(80%);
+    opacity: 0;
+}
+
+.page2-td1-enter-to,
+.page2-td2-enter-to,
+.page2-td3-enter-to,
+.page2-td4-enter-to,
+.page2-td5-enter-to{
+    opacity: 1;
+}
+
+.page2-td1-enter-active{
+    transition:all 1.2s ease; 
+}
+.page2-td4-enter-active,
+.page2-td2-enter-active{
+    transition:all 1.5s ease;
+}
+.page2-td5-enter-active,
+.page2-td3-enter-active{
+    transition:all 1.8s ease; 
+}

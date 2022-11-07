@@ -4,8 +4,8 @@
 
 ## 项目分支
 
-- [Vue 源代码](https://github.com/immengzi/zero_2022/tree/source)
-- [Vue 打包后的 dist 目录](https://github.com/immengzi/zero_2022)
+- [Vue 源代码](https://github.com/immengzi/zero_2022)
+- [Vue 打包后的 dist 目录](https://github.com/immengzi/zero_2022/tree/master)
 
 ## 项目主题
 

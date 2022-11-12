@@ -38,8 +38,8 @@
     ├─assets              #静态资源
     │  ├─css              #css样式
     │  │  └─animation     #page的动画
-    │  ├─fonts            #字体(未被使用)
-    │  └─img              #图片资源(未被使用)
+    │  ├─fonts            #字体
+    │  └─img              #图片资源(仅用于仓库预览)
     │      ├─activity
     │      ├─buildings
     │      ├─home

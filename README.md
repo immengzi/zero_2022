@@ -73,6 +73,7 @@
 - [Vite](https://cn.vitejs.dev/)
 - less
 - [汇文明朝体](https://tieba.baidu.com/p/7193815211)
+- [Fontmin](http://ecomfe.github.io/fontmin/)（字体子集化方案）
 
 ## 致谢
 

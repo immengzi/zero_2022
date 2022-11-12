@@ -37,7 +37,7 @@ export default {
   top: 0;
   height: 100vh;
   z-index: 0;
-  font-family: 微软雅黑, sans-serif;
+  font-family: huiwen, sans-serif;
   font-weight: 400;
   color: white;
   background-color: #2B2B2B;
@@ -61,7 +61,7 @@ export default {
 }
 
 .title{
-  font-family: 微软雅黑, sans-serif;
+  font-family: huiwen, sans-serif;
   font-size: 4vh;
   font-weight: 600;
   text-align: center;
@@ -70,7 +70,7 @@ export default {
 }
 
 .text{
-  font-family: 微软雅黑, sans-serif;
+  font-family: huiwen, sans-serif;
   font-size: 1.5vh;
   font-weight: 400;
   padding: 0 3vw;

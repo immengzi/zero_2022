@@ -55,7 +55,7 @@ export default {
         right: 0;
         height: 100%;
         top: 1vh;
-        font-family: 微软雅黑,sans-serif;
+        font-family: huiwen, sans-serif;
         color: #676B73;
     }
     .topBarSpan{

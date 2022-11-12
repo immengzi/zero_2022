@@ -76,6 +76,7 @@ export default {
   }
 }
 .message {
+  font-family: huiwen, sans-serif;
   width: 12vw;
   height: 6vh;
   position: fixed;

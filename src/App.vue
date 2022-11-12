@@ -155,6 +155,10 @@ export default {
     width:100%;
     min-width: 100%;
   }
+  @font-face {
+    font-family: 'huiwen';
+    src: url('./assets/fonts/huiwen.ttf');
+  }
   .pageDown-enter-from{
     transform: translateY(100%);
   }

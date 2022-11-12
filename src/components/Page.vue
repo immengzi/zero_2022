@@ -88,9 +88,9 @@ export default {
         width: 100%;
         height: 100%;
         line-height: 180%;
-        font-family: 华文仿宋;
+        font-family: huiwen, sans-serif;
         font-size: 2.5vh;
-        font-weight: 600;
+        font-weight: 400;
         background-color: rgba(255,255,255,0.7);
     }
     .page{

@@ -39,18 +39,18 @@ export default {
           '满载秋意的珞珈<br>一场WHUer的年度相约<br>那夜梅园操场歌声悠扬<br>少年意气风发<br>每一首歌，都饱含着真挚的情感<br>每一位歌者，都满怀热情<br>那夜的梅园因你们而闪闪发光'],
       ],
       im_src:[
-        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/ying.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/detail.avif',
-        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/pinkFlower.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/garden.avif',
-        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/1_nature/peng.avif'],
-        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/laozhaishe.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/xingzhenglou.avif',
-        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/songqing.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/18.avif',
-        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/2_buildings/ding.avif'],
-        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/study.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/sing.avif',
-        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/meicao.avif','https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/sport.avif',
-        'https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/3_activity/jinqiu.avif'],
-        ['https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/flower.avif',"https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/museum.avif",
-        "https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/circle.avif","https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/gongZhu.avif",
-        "https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/ren.avif"]
+        ['https://static.immengzi.wiki/ying.avif','https://static.immengzi.wiki/detail.avif',
+        'https://static.immengzi.wiki/pinkFlower.avif','https://static.immengzi.wiki/garden.avif',
+        'https://static.immengzi.wiki/peng.avif'],
+        ['https://static.immengzi.wiki/laozhaishe.avif','https://static.immengzi.wiki/xingzhenglou.avif',
+        'https://static.immengzi.wiki/songqing.avif','https://static.immengzi.wiki/18.avif',
+        'https://static.immengzi.wiki/ding.avif'],
+        ['https://static.immengzi.wiki/study.avif','https://static.immengzi.wiki/sing.avif',
+        'https://static.immengzi.wiki/meicao.avif','https://static.immengzi.wiki/sport.avif',
+        'https://static.immengzi.wiki/jinqiu.avif'],
+        ['https://static.immengzi.wiki/flower.avif',"https://static.immengzi.wiki/museum.avif",
+        "https://static.immengzi.wiki/circle.avif","https://static.immengzi.wiki/gongZhu.avif",
+        "https://zstatic.immengzi.wiki/ren.avif"]
       ]
     }
   },

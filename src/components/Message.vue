@@ -31,19 +31,19 @@ export default {
     // 定义一个对象，包含三种情况的样式，对象key就是类型字符串
     const style = {
       warn: {
-        icon:"https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/9_tips/warn.png",
+        icon:"https://static.immengzi.wiki/warn.png",
         color: '#E6A23C',
         backgroundColor: 'rgb(253, 246, 236)',
         borderColor: 'rgb(250, 236, 216)'
       },
       error: {
-        icon: "https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/9_tips/error.png",
+        icon: "https://static.immengzi.wiki/error.png",
         color: '#F56C6C',
         backgroundColor: 'rgb(254, 240, 240)',
         borderColor: 'rgb(253, 226, 226)'
       },
       success: {
-        icon: "https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/9_tips/ok.png",
+        icon: "https://static.immengzi.wiki/ok.png",
         color: '#67C23A',
         backgroundColor: 'rgb(240, 249, 235)',
         borderColor: 'rgb(225, 243, 216)'

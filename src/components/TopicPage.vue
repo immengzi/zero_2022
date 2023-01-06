@@ -1,22 +1,22 @@
 <template>
   <div class="topic_page">
     <div class="banner">
-      <Transition name="Image"><img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/flower.avif" alt="星湖晚樱" v-show="if_init&&index === 0"></Transition>
-      <Transition name="Image"><img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/museum.avif" alt="万林博物馆" v-show="if_init&&index === 1"></Transition>
-      <Transition name="Image"><img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/circle.avif" alt="小循环" v-show="if_init&&index === 2"></Transition>
-      <Transition name="Image"><img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/gongZhu.avif" alt="工主教" v-show="if_init&&index === 3"></Transition>
-      <Transition name="Image"><img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/ren.avif" alt="人文馆" v-show="if_init&&index === 4"></Transition>
+      <Transition name="Image"><img src="https://static.immengzi.wiki/flower.avif" alt="星湖晚樱" v-show="if_init&&index === 0"></Transition>
+      <Transition name="Image"><img src="https://static.immengzi.wiki/museum.avif" alt="万林博物馆" v-show="if_init&&index === 1"></Transition>
+      <Transition name="Image"><img src="https://static.immengzi.wiki/circle.avif" alt="小循环" v-show="if_init&&index === 2"></Transition>
+      <Transition name="Image"><img src="https://static.immengzi.wiki/gongZhu.avif" alt="工主教" v-show="if_init&&index === 3"></Transition>
+      <Transition name="Image"><img src="https://static.immengzi.wiki/ren.avif" alt="人文馆" v-show="if_init&&index === 4"></Transition>
       <Transition name="slowImage">
-      <div class="shortImg" v-show="if_init">
-        <img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/flower.avif" alt="星湖晚樱" @click="changeIndex(0)">
-        <img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/museum.avif" alt="万林博物馆" @click="changeIndex(1)">
-        <img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/circle.avif" alt="小循环" @click="changeIndex(2)">
-        <img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/gongZhu.avif" alt="工主教" @click="changeIndex(3)">
-        <img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/0_home/ren.avif" alt="人文馆" @click="changeIndex(4)">
-      </div>
-    </Transition>
+        <div class="shortImg" v-show="if_init">
+          <img src="https://static.immengzi.wiki/flower.avif" alt="星湖晚樱" @click="changeIndex(0)">
+          <img src="https://static.immengzi.wiki/museum.avif" alt="万林博物馆" @click="changeIndex(1)">
+          <img src="https://static.immengzi.wiki/circle.avif" alt="小循环" @click="changeIndex(2)">
+          <img src="https://static.immengzi.wiki/gongZhu.avif" alt="工主教" @click="changeIndex(3)">
+          <img src="https://static.immengzi.wiki/ren.avif" alt="人文馆" @click="changeIndex(4)">
+        </div>
+      </Transition>
     </div>
-    <img src="https://zero-2022.oss-cn-hangzhou.aliyuncs.com/img/9_tips/wheel.jpg" alt="向下滚动" id="wheel">
+    <img src="https://static.immengzi.wiki/wheel.jpg" alt="向下滚动" id="wheel">
     <span id="arrow">&#8595</span>
     <div class="home_text">
       <div class="home_text_title">
@@ -27,7 +27,7 @@
         <Transition name="bigLabel"><span v-show="if_init&&index === 4">人文馆</span></Transition>
       </div>
       <div class="home_text_article">
-          <Transition name="smallLabel"><span v-show="if_init&&index === 0">
+        <Transition name="smallLabel"><span v-show="if_init&&index === 0">
           湖面平静，水光潋滟<br>
           廊亭曲折，画栋雕梁<br>
           细柳低垂，松柏繁密<br>

@@ -36,6 +36,27 @@ export default {
 
 <style scoped>
 .about-page {
-
+  background-color: #2B2B2B;
+  color: white;
+  height: 100vh;
+  padding-top: 6vh;
+}
+.about-card {
+  height: 20%;
+  width: 60%;
+  margin: 5vh auto;
+  border-radius: 4vh;
+  box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0.1);
+}
+.card-title {
+  font-size: 4vh;
+  font-weight: 600;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+.card-text {
+  font-size: 1.8vh;
+  font-weight: 400;
+  padding: 0 3vw;
 }
 </style>

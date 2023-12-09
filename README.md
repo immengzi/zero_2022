@@ -1,4 +1,4 @@
-# vue_test
+# WHU-SCENE
 
 ## Project setup
 ```

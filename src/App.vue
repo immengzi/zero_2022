@@ -1,37 +1,52 @@
 <template>
-<!--  <img alt="Vue logo" src="./assets/logo.png">-->
-<!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <div id="app">
   <div class="common-layout">
     <el-container>
-      <el-header height="68">
-        <TitleBar/>
+      <el-header>
+        <TitleBar :controlRouterView="controlRouterView" />
       </el-header>
       <el-main>
-        <AboutPage/>
+        <router-view/>
       </el-main>
     </el-container>
+  </div>
   </div>
 </template>
 
 <script>
-import AboutPage from "@/components/AboutPage";
 import TitleBar from "@/components/TitleBar";
+import router from "@/router";
 
 export default {
   name: 'App',
   components: {
     TitleBar,
-    AboutPage,
-  }
+  },
+  provide() {
+    return {
+      controlRouterView: this.controlRouterView,
+    };
+  },
+  methods: {
+    controlRouterView(route) {
+      router.push(route);
+    },
+  },
 }
 </script>
 
 <style>
 #app {
-  font-family: "JetBrains Mono", sans-serif;
+  font-family: Huiwen-mincho, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+header.el-header {
+  --el-header-padding: 0;
+}
+main.el-main {
+  --el-main-padding: 0;
 }
 </style>

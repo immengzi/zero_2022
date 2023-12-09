@@ -1,5 +1,5 @@
 {
-  "name": "vue_test",
+  "name": "WHU-SCENE",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,9 @@
     "bootstrap": "^5.3.2",
     "core-js": "^3.8.3",
     "element-plus": "^2.4.3",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

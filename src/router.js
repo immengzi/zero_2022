@@ -6,6 +6,7 @@ import StudentPage from "@/components/StudentPage"
 import About from './components/AboutPage'
 
 const routes = [
+    { path: '/', component: Home },
     { path: '/home', component: Home },
     { path: '/nature', component: NaturePage},
     { path: '/architecture', component: ArchitecturePage},

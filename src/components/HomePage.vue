@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: "MainPage",
+  name: "HomePage",
   data() {
     return {
       imageList: [

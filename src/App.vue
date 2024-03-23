@@ -3,7 +3,7 @@
   <div class="common-layout">
     <el-container>
       <el-header>
-        <TitleBar :controlRouterView="controlRouterView" />
+        <TitleBar/>
       </el-header>
       <el-main>
         <router-view/>
